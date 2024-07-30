@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 const HeaderItem = ({name, Icon}) => {
     return (
         <div className='text-white flex items-center gap-3 text-[15px] font-semibold cursor-pointer hover:underline underline-offset-8 mb-2'>
@@ -7,5 +7,7 @@ const HeaderItem = ({name, Icon}) => {
         </div>
     );
 };
-
+HeaderItem.propTypes = {
+    name: PropTypes.string,
+}
 export default HeaderItem;
