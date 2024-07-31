@@ -1,18 +1,20 @@
 import './App.css'
-import GenreMovieList from './Components/GenreMovieList/GenreMovieList'
-import Header from './Components/Header/Header'
-import ProductionHouse from './Components/ProductionHouse/ProductionHouse'
-import Slider from './Components/Slider/Slider'
+import Header from './Components/Header'
+import Slider from './Components/Slider'
+import ProductionHouse from './Components/ProductionHouse'
+import GenreMovieList from './Components/GenreMovieList'
+
+
 
 function App() {
 
   return (
-    <>
+    <div className="">
       <Header></Header>
-      <Slider></Slider>
+      <Slider></Slider>     
       <ProductionHouse></ProductionHouse>
       <GenreMovieList></GenreMovieList>
-    </>
+    </div>
   )
 }
 
